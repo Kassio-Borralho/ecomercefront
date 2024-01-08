@@ -1,5 +1,7 @@
 <script setup>
+// Components
 import AppLayout from '@/layout/AppLayout.vue';
+import ProductcardHome from '@/components/app/partials/ProductCardHome.vue';
 
 //Images
 import BannerImage from "@/assets/images/banner_home.jpg";
@@ -11,11 +13,18 @@ import AutomovelImage from "@/assets/images/automovel.png";
 import PetsImage from "@/assets/images/pets.png";
 import EscolarImage from "@/assets/images/escolar.png";
 
+//Icons
+import TruckIcon from '@/components/icons/TruckIcon.vue';
+
 </script>
 
 <template>
   <AppLayout>
-
+    <div class="w-full p-2 bg-orange-600 flex items-center justify-center mb-4 -mt-2 rounded-md text-white font-bold">
+      <TruckIcon class="w-5 mr-3" />
+      <span><b>FRETE GŔATIS</b> em compras acima de R$: 150,00 - Ganhe cashback de até 15% em compras com pix acima de
+        R$:100,00</span>
+    </div>
     <!-- banner -->
     <div class="w-full flex justify-center">
       <img :src="BannerImage" class="rounded-md w-full">
@@ -93,6 +102,24 @@ import EscolarImage from "@/assets/images/escolar.png";
 
       </div>
 
+    </div>
+
+    <!-- Listagem de produtos -->
+    <hr>
+    <div class="w-full  z-10">
+      <p class="text-center my-6">Produtos para você ✨</p>
+      <div class="w-full mt-2 flex flex-wrap justify-center md:gap-10 lg:gap-6 ">
+
+        <ProductcardHome />
+        <ProductcardHome />
+        <ProductcardHome />
+        <ProductcardHome />
+        <ProductcardHome />
+        <ProductcardHome />
+        <ProductcardHome />
+        <ProductcardHome />
+
+      </div>
     </div>
 
   </AppLayout>
