@@ -4,7 +4,7 @@ import FooterComponent from '@/components/app/partials/FooterComponent.vue';
 </script>
 <template>
     <NavComponent />
-    <main class="max-w-7xl min-h-screen mx-auto border p-6 bg-green-300">
+    <main class="max-w-7xl min-h-screen mx-auto border p-6 ">
         <slot />
     </main>
     <FooterComponent />
