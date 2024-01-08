@@ -1,9 +1,9 @@
 <script setup>
 import AppLayout from '@/layout/AppLayout.vue';
 </script>
-
 <template>
-  <main>
-    <AppLayout />
-  </main>
+    <AppLayout>
+
+        detalhes do produto
+    </AppLayout>
 </template>
